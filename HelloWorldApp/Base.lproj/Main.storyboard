@@ -30,6 +30,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Show Text"/>
+                                <connections>
+                                    <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aaj-Ij-m2m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,6 +45,10 @@
                             <constraint firstItem="gvn-Aa-jBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKZ-17-F0B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="kWg-Nc-JRj" id="tgB-cW-QLF"/>
+                        <outlet property="showTextButton" destination="gvn-Aa-jBy" id="NdM-0w-hzb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
