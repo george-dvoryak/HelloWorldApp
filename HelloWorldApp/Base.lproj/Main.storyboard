@@ -17,32 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kWg-Nc-JRj">
-                                <rect key="frame" x="69" y="194" width="252" height="45"/>
+                                <rect key="frame" x="69" y="194" width="252" height="44.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="38"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvn-Aa-jBy">
-                                <rect key="frame" x="70" y="695" width="250" height="55"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="A6A-BD-MCR">
+                                <rect key="frame" x="60" y="590" width="270" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1H-Eh-du6">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="55"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Do smth"/>
+                                        <connections>
+                                            <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="1AK-aV-CRV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvn-Aa-jBy">
+                                        <rect key="frame" x="0.0" y="75" width="270" height="55"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Show Text"/>
+                                        <connections>
+                                            <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aaj-Ij-m2m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Ap1-Gg-cuq"/>
+                                    <constraint firstAttribute="width" constant="270" id="Nm8-Hb-iwG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Show Text"/>
-                                <connections>
-                                    <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aaj-Ij-m2m"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.86016849738726697" green="0.92764058314683251" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gvn-Aa-jBy" secondAttribute="bottom" constant="60" id="F49-Tt-DoW"/>
+                            <constraint firstItem="A6A-BD-MCR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5nf-KA-m2c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWg-Nc-JRj" secondAttribute="trailing" constant="69" id="N11-0I-zI2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A6A-BD-MCR" secondAttribute="bottom" constant="90" id="XH4-ZP-cTl"/>
                             <constraint firstItem="kWg-Nc-JRj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="fkV-9u-YOU"/>
                             <constraint firstItem="kWg-Nc-JRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="jJL-PR-BuX"/>
-                            <constraint firstItem="gvn-Aa-jBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKZ-17-F0B"/>
                         </constraints>
                     </view>
                     <connections>
